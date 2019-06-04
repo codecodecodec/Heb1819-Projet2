@@ -7,7 +7,7 @@ import time
 #On prepare les variables que nous allons utiliser
 appTitre = "My Family App"
 appImage = "power.ppm" #Dimension 600x250
-appCouleur = "black"
+appCouleur = "grey"
 appFontCouleur = "white"
 
 #On cree la page

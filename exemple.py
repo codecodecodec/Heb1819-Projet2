@@ -15,12 +15,12 @@ fenetre = Tk()
 
 #On prepare les fonctions que nous allons utiliser
 def recherche():
-    text_saisie=bar_saisie.get() #Je recupere ce qu'il y a dans la bar de saisie
+    texte_saisie=barre_saisie.get() #Je recupere ce qu'il y a dans la bar de saisie
     texte_resultat.delete(0.0, END)
     try:
-        membre = ma_famille[text_saisie]
+        membre = ma_famille[texte_saisie]
     except:
-        membre =  text_saisie + " n'est pas un membre de ma famille !"
+        membre =  texte_saisie + " n'est pas un membre de ma famille !"
     texte_resultat.insert(END, membre)
 
 def quitter_fenetre():
@@ -40,8 +40,8 @@ Label(fenetre, image=photo, bg=appCouleur).grid(row=0, column=0, sticky = W)
 Label(fenetre, text="Voici ma famille !\nDe qui voulez vous que je parle :", bg=appCouleur, fg=appFontCouleur, font= "none 12 bold").grid(row=0, column=0, sticky = W)
 
 #On cree la bar de saisie pour l'utilisateur et on la place en dessous
-bar_saisie= Entry(fenetre, width=20, bg="white")
-bar_saisie.grid(row=2, column=0, sticky=W)
+barre_saisie= Entry(fenetre, width=20, bg="white")
+barre_saisie.grid(row=2, column=0, sticky=W)
 
 #On ajoute un bouton
 Button(fenetre, text="Valider", width=6, command=recherche).grid(row=3, column=0, sticky=W)

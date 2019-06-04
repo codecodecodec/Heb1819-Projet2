@@ -15,7 +15,7 @@ fenetre = Tk()
 
 #On prepare les fonctions que nous allons utiliser
 def recherche():
-    texte_saisie=barre_saisie.get() #Je recupere ce qu'il y a dans la bar de saisie
+    texte_saisie=barre_saisie.get() #Je recupere ce qu'il y a dans la barre de saisie
     texte_resultat.delete(0.0, END)
     try:
         membre = ma_famille[texte_saisie]
